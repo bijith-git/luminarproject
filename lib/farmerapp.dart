@@ -182,7 +182,9 @@ class MyHomePage extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          Text(texts[index])
+                          Container(
+                            padding: EdgeInsets.all(20),
+                            child: Text(texts[index]))
                         ],
                       ));
                 },
