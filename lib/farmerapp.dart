@@ -32,13 +32,13 @@ class MyHomePage extends StatelessWidget {
               pinned: true,
               snap: false,
               centerTitle: false,
-              title: Text('Farmers Fresh Zone'),
+              title: const Text('Farmers Fresh Zone'),
               actions: [
                 IconButton(
                   icon: Icon(Icons.place),
                   onPressed: () {},
                 ),
-                Padding(
+                const Padding(
                   padding: const EdgeInsets.only(
                     top: 5,
                     bottom: 5,
@@ -54,7 +54,7 @@ class MyHomePage extends StatelessWidget {
                   width: double.infinity,
                   height: 40,
                   color: Colors.white,
-                  child: Center(
+                  child: const Center(
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: 'Search for vegitable and fruits',
@@ -75,20 +75,22 @@ class MyHomePage extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         ButtonsTabBar(
-                          contentPadding: EdgeInsets.all(10),
-                          backgroundColor: Color.fromARGB(164, 105, 240, 175),
+                          contentPadding: const EdgeInsets.all(10),
+                          backgroundColor:
+                              const Color.fromARGB(164, 105, 240, 175),
                           unselectedBackgroundColor:
-                              Color.fromARGB(141, 105, 240, 175),
-                          unselectedLabelStyle: TextStyle(color: Colors.green),
+                              const Color.fromARGB(141, 105, 240, 175),
+                          unselectedLabelStyle:
+                              const TextStyle(color: Colors.green),
                           labelStyle: TextStyle(
                               color: Colors.green, fontWeight: FontWeight.bold),
                           tabs: [
-                            Tab(text: "Vegetables"),
-                            Tab(text: "Exotic fruits "),
-                            Tab(text: "Fruits"),
-                            Tab(text: "Fresh cuts"),
-                            Tab(text: "Flavors"),
-                            Tab(text: "juice"),
+                            const Tab(text: "Vegetables"),
+                            const Tab(text: "Exotic fruits "),
+                            const Tab(text: "Fruits"),
+                            const Tab(text: "Fresh cuts"),
+                            const Tab(text: "Flavors"),
+                            const Tab(text: "juice"),
                           ],
                         ),
                       ],
@@ -101,7 +103,7 @@ class MyHomePage extends StatelessWidget {
                   fit: BoxFit.fitWidth,
                 )),
                 Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                       border: Border.all(width: 1.5, color: Colors.black),
                       borderRadius: BorderRadius.circular(15)),
@@ -109,14 +111,14 @@ class MyHomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Container(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           child: Column(
                             children: [
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.watch_later),
+                                icon: const Icon(Icons.watch_later),
                               ),
-                              Text("30 min policy"),
+                              const Text("30 min policy"),
                             ],
                           ),
                         ),
@@ -126,29 +128,29 @@ class MyHomePage extends StatelessWidget {
                             children: [
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.gps_fixed),
+                                icon: const Icon(Icons.gps_fixed),
                               ),
-                              Text("tracebility"),
+                              const Text("tracebility"),
                             ],
                           ),
                         ),
                         Container(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           child: Column(
                             children: [
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.local_florist),
+                                icon: const Icon(Icons.local_florist),
                               ),
-                              Text("local sourcing"),
+                              const Text("local sourcing"),
                             ],
                           ),
                         ),
                       ]),
                 ),
                 Container(
-                  padding: EdgeInsets.all(10),
-                  child: Text(
+                  padding: const EdgeInsets.all(10),
+                  child: const Text(
                     "Shop By Category",
                     style: TextStyle(
                       fontSize: 28,
@@ -183,8 +185,8 @@ class MyHomePage extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.all(20),
-                            child: Text(texts[index]))
+                              padding: EdgeInsets.all(20),
+                              child: Text(texts[index]))
                         ],
                       ));
                 },
@@ -196,15 +198,15 @@ class MyHomePage extends StatelessWidget {
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.green,
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               label: "home",
               icon: Icon(Icons.home),
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               label: "cart",
               icon: Icon(Icons.shopping_cart),
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               label: "Account",
               icon: Icon(Icons.account_circle),
             ),
