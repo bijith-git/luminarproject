@@ -1,6 +1,6 @@
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:luminarproject/hotel%20ui/components/stack.dart';
+import 'package:luminarproject/hotelui/components/stack.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -43,7 +43,8 @@ class _HotelDescState extends State<HotelDesc> {
                               direction: Axis.horizontal,
                               allowHalfRating: true,
                               itemCount: 5,
-                              itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
+                              itemPadding:
+                                  EdgeInsets.symmetric(horizontal: 4.0),
                               itemBuilder: (context, _) => Icon(
                                 Icons.star,
                                 color: Colors.green,
@@ -54,7 +55,8 @@ class _HotelDescState extends State<HotelDesc> {
                             ),
                             Text(dollor + "200",
                                 style: TextStyle(
-                                    color: const Color.fromARGB(255, 7, 146, 232),
+                                    color:
+                                        const Color.fromARGB(255, 7, 146, 232),
                                     fontSize: 24,
                                     fontWeight: FontWeight.bold)),
                           ],
@@ -90,7 +92,7 @@ class _HotelDescState extends State<HotelDesc> {
                           height: 40,
                           width: 300,
                           decoration: BoxDecoration(
-                            gradient: LinearGradient(colors:[
+                            gradient: LinearGradient(colors: [
                               Color.fromARGB(255, 7, 146, 232),
                               Color.fromARGB(255, 7, 146, 232).withOpacity(0.8)
                             ]),

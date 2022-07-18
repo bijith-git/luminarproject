@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:luminarproject/hotel%20ui/components/components.dart';
+import 'package:luminarproject/hotelui/components/components.dart';
 
 void main(List<String> args) {
   runApp(MaterialApp(
