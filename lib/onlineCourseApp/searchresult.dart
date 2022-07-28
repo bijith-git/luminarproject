@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:luminarproject/onlineCourseApp/components/review.dart';
 
-import 'components/listtile.dart';
 
 void main(List<String> args) {
   runApp(
